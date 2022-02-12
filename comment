@@ -35,3 +35,19 @@
         1.9.3 配置分组: 区分每个环境(dev, qa, staging, prod)
 
 2. Gateway
+
+
+3. Rabbit-MQ
+    3.1 添加dependency
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+    3.2 配置文件
+        spring.rabbitmq.host=127.0.0.1
+        spring.rabbitmq.port=5672
+        spring.rabbitmq.virtual-host=/
+
+    3.3 开启
+        @EnableRabbit
