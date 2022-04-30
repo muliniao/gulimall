@@ -1,5 +1,5 @@
 
-1. 配置中心(Nacos)
+1. 注册中心和配置中心(Nacos)
     1.1 添加dependency
      <dependency>
          <groupId>com.alibaba.cloud</groupId>
@@ -34,10 +34,18 @@
         1.9.2 新建配置: Data Id (gulimall-coupon.properties. 默认规则是"应用名.properties")
         1.9.3 配置分组: 区分每个环境(dev, qa, staging, prod)
 
-2. Gateway
+    *补充
+        - 需修改nacos脚本，指向本地的java环境
+        - sudo bash -f ./startup.sh -m standalone
+        - 用户名/密码: nacos和nacos
+
+3. OpenFegin
+    2.1 微服务间的调用
+
+4. Gateway
 
 
-3. Rabbit-MQ
+5. Rabbit-MQ
     3.1 添加dependency
         <dependency>
             <groupId>org.springframework.boot</groupId>
